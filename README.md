@@ -1,30 +1,35 @@
-# GIST 604B – PostGIS
+# PostGIS Spatial Database Workflows
+**Student:** Lauren Bolton  
+**Course:** GIST 604B – Open Source GIS  
+**Module 4:** PostGIS Database Orchestration  
+**University of Arizona**  
 
-Repository for working with spatial data using PostgreSQL and PostGIS.
+## Project Description
+This project demonstrates spatial database workflows using PostgreSQL and PostGIS in a containerized environment. It focuses on developing SQL queries to analyze New York City datasets, combining demographic and spatial analysis within a relational database.
+
+## Tools and Technologies
+- PostgreSQL
+- PostGIS
+- Docker
+- SQL
+- GitHub Codespaces
+
+## What I Did
+- Set up a PostGIS-enabled PostgreSQL database using Docker in a cloud development environment
+- Imported NYC spatial datasets (neighborhoods, census blocks, streets, and subway stations)
+- Developed SQL queries for demographic analysis, including calculating population statistics by borough
+- Performed geometry and spatial relationship queries, including feature intersections and distance-based analysis
+- Executed spatial joins and multi-table queries to analyze relationships between population and infrastructure
+
+## How to View/Run
+- Start the database container with docker compose up -d
+- Connect to the PostgreSQL/PostGIS database
+- Import spatial data into the database
+- Run SQL queries from the **sql** folder
 
 ## Repository Structure
+- /sql – SQL scripts for queries
+- /data – NYC spatial datasets used in the database
+- .devcontainer/ – container configuration for the database environment
+- README.md – project overview and documentation
 
-    .
-    ├── README.md
-    ├── .devcontainer
-    │   ├── devcontainer.json
-    │   └── Dockerfile
-    ├── sql/
-    │   ├── 01_basic_sql_queries.sql
-    │   ├── 02_geometry_queries.sql
-    │   ├── 03_spatial_relationships.sql
-    │   └── 04_spatial_joins.sql
-    ├── demos/
-    │   ├── demo_aggregation_queries.sql
-    │   ├── demo_basic_queries.sql
-    │   ├── demo_filtering_queries.sql
-    │   └── demo_postgis_queries.sql
-    └── docker-compose.yml
-
-## Notes
-
-- demos folder contains sql scripts discussed in the lectures.
-- SQL files contain exercises and hints.
-- Write and execute queries directly in the `sql/` files using the VS Code PostgreSQL extension.
-- Data is downloaded and prepared inside the Codespace environment and is not stored in this repository.
-- The database runs in a separate PostGIS container using Docker.
