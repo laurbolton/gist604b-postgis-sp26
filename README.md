@@ -1,4 +1,4 @@
-# PostGIS Spatial Database Workflows
+# PostGIS Database Orchestration
 **Student:** Lauren Bolton  
 **Course:** GIST 604B – Open Source GIS  
 **Module 4:** PostGIS Database Orchestration  
