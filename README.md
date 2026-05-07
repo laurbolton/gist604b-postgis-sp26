@@ -22,14 +22,16 @@ This project demonstrates spatial database workflows using PostgreSQL and PostGI
 - Executed spatial joins and multi-table queries to analyze relationships between population and infrastructure
 
 ## How to View/Run
-- Start the database container with docker compose up -d
+- Start the database container with `docker compose up -d`
 - Connect to the PostgreSQL/PostGIS database
 - Import spatial data into the database
 - Run SQL queries from the **sql** folder
 
 ## Repository Structure
-- /sql – SQL scripts for queries
-- /data – NYC spatial datasets used in the database
-- .devcontainer/ – container configuration for the database environment
-- README.md – project overview and documentation
+      .
+      ├── .devcontainer            # Container configuration for PostGIS environment 
+      ├── sql/                     # SQL scripts for queries 
+      ├── demos/                   # NYC spatial datasets used in PostGIS 
+      ├── docker-compose.yml     
+      └── README.md                # Project documentation 
 
